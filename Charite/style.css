@@ -1,0 +1,183 @@
+*
+{
+   margin: 0;
+   padding: 0;
+
+
+}
+.widget-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+h3 {
+    font: 32px/1.1 "Raleway", sans-serif;
+
+}
+header
+{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/charity.jpg);
+height: 100vh;
+background-size: cover;
+background-position: center;
+
+}
+
+.main-nav
+{
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+.main-nav li
+{
+   display: inline-block;
+}
+.main-nav li a
+{
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px ;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+
+}
+
+.main-nav li.active a
+{
+  border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+  border:1px solid white;
+}
+.logo img
+{
+  width: 130px;
+  height: auto;
+  float: left;
+}
+
+body
+{
+  font-family: monospace;
+}
+
+.row
+{
+  max-width:  1200px
+  margin:auto;
+}
+.hero
+{
+  position: absolute;
+  width: 1200px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+h1
+{
+  color: white;
+  text-transform:capitalize;
+  font-family: sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top:200px;
+}
+
+.button
+{
+  margin-top: 30px;
+  margin-left: 440px;
+}
+.btn
+{
+    border:1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.btn-one
+{
+  background-color: darkorange;
+  font-family: "Roboto",sans-serif;
+}
+.btn-two
+{
+  font-family: "Roboto",sans-serif;
+}
+.btn-two:hover
+{
+  background-color: darkorange;
+  transition: all 0.5s ease-in;
+}
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
