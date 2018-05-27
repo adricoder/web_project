@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>Charité </title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.team-section{
+  overflow: hidden;
+  text-align: center;
+  background: #34495e;
+  padding: 0px;
+}
+.team-section h1{
+  text-transform:uppercase;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 40px;
+}
+.border{
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 3px;
+  background: #3498db;
+  margin-bottom: 40px;
+}
+.ps{
+  margin-bottom: 40px;
+}
+
+.ps a{
+  display: inline-block;
+  margin: 0 30px;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.ps a img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+}
+.ps a:hover > img{
+  filter: none;
+}
+
+.section{
+  width: 600px;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  height: 0;
+  overflow: hidden;
+}
+.section:target{
+  height: auto;
+}
+.name{
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.team-header
+  {
+  background: #34495e;
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+
+  }
+
+</style>
+</head>
+<body>
+
+  <script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+  }
+  </script>
+
+<header class="team-header">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <li class="active"><a href="index.html"> Home</a></li>
+  <li><a href="about.html"> About us</a></li>
+  <li><a href="Services.html"> Our Services</a></li>
+  <li><a href="Team.html"> Our Team</a></li>
+  <li><a href="gallery.html"> Gallery</a></li>
+  <li><a href="projects.html"> Our Projects</a></li>
+  <li><a href="testimonials.html"> Testimonials</a></li>
+  <li><a href="donate.html"> Donate</a></li>
+  <li><a href="contact.html"> Contact us</a></li>
+</div>
+
+<div id="main">
+  <h2></h2>
+  <p></p>
+  <span style="font-size:45px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+
+<div class="team-section">
+  <h1> Our Team</h1>
+  <span class="border"></span>
+
+  <div class="ps">
+    <a href="#deepali"><img src="images/deepali.png" alt="Deepali"></a>
+    <a href="#sianwa"><img src="images/sianwa.jpg" alt="Sianwa"></a>
+    <a href="#hillary"><img src="images/hillary.png" alt="Hillary"></a>
+    <a href="#adrian"><img src="images/adrian.png" alt="Adrian"></a>
+
+  </div>
+
+  <div class="section" id="deepali">
+  <span class="name">Deepali Bhatt</span>
+  <span class="border"></span>
+  <p>Public relations (PR) is about managing reputation. A career in PR involves gaining understanding and support for your clients, as well as trying to influence opinion and behaviour. You'll use all forms of media and communication to build, maintain and manage the reputation of your clients.</p>
+  </div>
+  <div class="section" id="sianwa">
+    <span class="name">Sianwa Atemi</span>
+      <span class="border"></span>
+      <p>In qualitative studies, the role of the researcher is quite different. The research is considered an instrument of data collection (Denzin & Lincoln, 2003). This means that data are mediated through this human instrument, rather than through inventories, questionnaires, or machines.</p>
+    </div>
+    <div class="section" id="hillary">
+      <span class="name">Hillary Omondi</span>
+        <span class="border"></span>
+        <p>The CEO's leadership role also entails being ultimately responsible for all day-to-day management decisions and for implementing the Company's long and short term plans. The CEO acts as a direct liaison between the Board and management of the Company and communicates to the Board on behalf of management.</p>
+      </div>
+      <div class="section" id="adrian">
+        <span class="name">Adrian Kimaru</span>
+        <span class="border"></span>
+        <p>Salesperson: Position and Functions Performed by a Sales Person! A salesperson is an important sales management position maintaining vital link between an enterprise and customers, society, distributors, retailers and others. Nature of roles played by a sales person is given as follows.</p>
+      </div>
+
+
+</header>
+
+
+</body>
+
+
+</html>
